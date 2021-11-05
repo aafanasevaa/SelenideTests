@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class DragandDropTest {
+public class DragAndDropTest {
 
     @BeforeAll
     static void beforeAll() {
@@ -15,7 +15,7 @@ public class DragandDropTest {
     }
 
     @Test
-    void DragandDropTest() {
+    void DragAndDropTest() {
 
 //        - Откройте https://the-internet.herokuapp.com/drag_and_drop
         open ("https://the-internet.herokuapp.com/drag_and_drop");
