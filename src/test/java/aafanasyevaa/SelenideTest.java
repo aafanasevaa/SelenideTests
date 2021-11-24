@@ -17,7 +17,7 @@ public class SelenideTest {
 
     @Test
     void FindJUnitInSelenide() {
-        open ("https://github.com/selenide/selenide");
+        open("https://github.com/selenide/selenide");
         $("#wiki-tab").click();
         $(".mx-auto").click();
         $(".Layout-sidebar").find(byText("SoftAssertions")).click();
