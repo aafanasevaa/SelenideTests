@@ -16,14 +16,8 @@ public class DragAndDropTest {
 
     @Test
     void DragAndDropTest() {
-
-//        - Откройте https://the-internet.herokuapp.com/drag_and_drop
         open ("https://the-internet.herokuapp.com/drag_and_drop");
-
-//        - Перенесите прямоугольник А на место В
         $("#column-a").dragAndDropTo($("#column-b"));
-
-//        - Проверьте, что прямоугольники действительно поменялись
         $("#column-b").shouldHave(text("A"));
         $("#column-a").shouldHave(text("B"));
 
