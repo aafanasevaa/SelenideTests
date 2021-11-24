@@ -20,6 +20,5 @@ public class DragAndDropTest {
         $("#column-a").dragAndDropTo($("#column-b"));
         $("#column-b").shouldHave(text("A"));
         $("#column-a").shouldHave(text("B"));
-
     }
 }
