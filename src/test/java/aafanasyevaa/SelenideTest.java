@@ -18,17 +18,17 @@ public class SelenideTest {
     @Test
     void FindJUnitInSelenide() {
 
-//        - Откройте страницу Selenide в Github
+//        - Открыть страницу Selenide в Github
         open ("https://github.com/selenide/selenide");
 
-//        - Перейдите в раздел Wiki проекта
+//        - Перейти в раздел Wiki проекта
         $("#wiki-tab").click();
 
-//        - Убедитесь, что в списке страниц (Pages) есть страница SoftAssertions
+//        - Убедиться, что в списке страниц (Pages) есть страница SoftAssertions
         $(".mx-auto").click();
         $(".Layout-sidebar").find(byText("SoftAssertions")).click();
 
-//          - Откройте страницу SoftAssertions, проверьте что внутри есть пример кода для JUnit5
+//        - Открыть страницу SoftAssertions, проверить что внутри есть пример кода для JUnit5
 
         $(".repository-content").shouldHave(text("com.codeborne.selenide.junit5.SoftAssertsExtension"));
     }
